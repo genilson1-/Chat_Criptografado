@@ -1,0 +1,118 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.11"/>
+<title>Projeto Chat via TCP/IP: RC4</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="logo-ufrn-imd.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Projeto Chat via TCP/IP
+   </div>
+   <div id="projectbrief">Comunicação cifrada (SDes ou RC4) | Clients-Server</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.8.11 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Busca');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Página&#160;Principal</span></a></li>
+      <li class="current"><a href="pages.html"><span>Páginas&#160;relacionadas</span></a></li>
+      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
+      <li><a href="annotated.html"><span>Classes</span></a></li>
+      <li><a href="files.html"><span>Arquivos</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Busca" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title"><a class="el" href="namespaceRC4.html">RC4</a> </div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><p><em>Classe para criptografia de mensagens usando <a class="el" href="namespaceRC4.html">RC4</a></em></p>
+<h2>Classe <a class="el" href="namespaceRC4.html">RC4</a> </h2>
+<p>Visão Geral</p><ul>
+<li>A classe <a class="el" href="namespaceRC4.html">RC4</a> recebe uma mensagem que será criptografada e posteriomente enviada pelo <a class="el" href="namespaceclient__chat.html">client_chat</a>.</li>
+<li>A classe <a class="el" href="namespaceRC4.html">RC4</a> também serve para decriptar as mensagem que compartilhem a mesma chave.</li>
+</ul>
+<h2>Métodos </h2>
+<p><b>Construtor <b>init</b>()</b></p><ul>
+<li>Inicializa a variável PASS_RC4 (chave secreta usada pelo <a class="el" href="namespaceRC4.html">RC4</a>)</li>
+</ul>
+<p><b>ksa()</b></p><ul>
+<li>Usada para inicializar a permutação no array S. K.Length é definido como o número de bytes na chave e pode variar entre 1 e 256.</li>
+</ul>
+<p><b>prga()</b></p><ul>
+<li>O PRGA modifica o estado e a saída do byte resultante em cada repetição.</li>
+</ul>
+<p><b>charToInt()</b></p><ul>
+<li>Transforma a msg em uma lista de inteiros.</li>
+</ul>
+<p><b>encrypt()</b></p><ul>
+<li>Encripta a mensagem com <a class="el" href="namespaceRC4.html">RC4</a>.</li>
+</ul>
+<p><b>decrypt()</b></p><ul>
+<li>Decripta a mensagem com <a class="el" href="namespaceRC4.html">RC4</a>. </li>
+</ul>
+</div></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Gerado por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.11
+</small></address>
+</body>
+</html>

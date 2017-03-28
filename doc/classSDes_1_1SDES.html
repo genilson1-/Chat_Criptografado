@@ -1,0 +1,920 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.11"/>
+<title>Projeto Chat via TCP/IP: Referência da Classe SDes.SDES</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="logo-ufrn-imd.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Projeto Chat via TCP/IP
+   </div>
+   <div id="projectbrief">Comunicação cifrada (SDes ou RC4) | Clients-Server</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.8.11 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Busca');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Página&#160;Principal</span></a></li>
+      <li><a href="pages.html"><span>Páginas&#160;relacionadas</span></a></li>
+      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
+      <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
+      <li><a href="files.html"><span>Arquivos</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Busca" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>Lista&#160;de&#160;Componentes</span></a></li>
+      <li><a href="classes.html"><span>Índice&#160;dos&#160;Componentes</span></a></li>
+      <li><a href="inherits.html"><span>Hierarquia&#160;de&#160;Classes</span></a></li>
+      <li><a href="functions.html"><span>Componentes&#160;Membros</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespaceSDes.html">SDes</a></li><li class="navelem"><a class="el" href="classSDes_1_1SDES.html">SDES</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Métodos Públicos</a> &#124;
+<a href="#pub-attribs">Atributos Públicos</a> &#124;
+<a href="#pub-static-attribs">Atributos Estáticos Públicos</a> &#124;
+<a href="classSDes_1_1SDES-members.html">Lista de todos os Membros</a>  </div>
+  <div class="headertitle">
+<div class="title">Referência da Classe SDes.SDES</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="dynheader">
+Diagrama de Hierarquia para SDes.SDES:</div>
+<div class="dyncontent">
+<div class="center"><img src="classSDes_1_1SDES__inherit__graph.png" border="0" usemap="#SDes_8SDES_inherit__map" alt="Inheritance graph"/></div>
+<map name="SDes_8SDES_inherit__map" id="SDes_8SDES_inherit__map">
+</map>
+<center><span class="legend">[<a href="graph_legend.html">legenda</a>]</span></center></div>
+<div class="dynheader">
+Diagrama de colaboração para SDes.SDES:</div>
+<div class="dyncontent">
+<div class="center"><img src="classSDes_1_1SDES__coll__graph.png" border="0" usemap="#SDes_8SDES_coll__map" alt="Collaboration graph"/></div>
+<map name="SDes_8SDES_coll__map" id="SDes_8SDES_coll__map">
+</map>
+<center><span class="legend">[<a href="graph_legend.html">legenda</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Métodos Públicos</h2></td></tr>
+<tr class="memitem:ab8276906cece541fb8913287f8ae5af1"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSDes_1_1SDES.html#ab8276906cece541fb8913287f8ae5af1">__init__</a> (self, PASS_SDES='0010100000')</td></tr>
+<tr class="memdesc:ab8276906cece541fb8913287f8ae5af1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construtor <b>init</b>() da classe <a class="el" href="namespaceSDes.html">SDes</a>.  <a href="#ab8276906cece541fb8913287f8ae5af1">Mais...</a><br /></td></tr>
+<tr class="separator:ab8276906cece541fb8913287f8ae5af1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae7a61be26b2ab9f946858b269f783ceb"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSDes_1_1SDES.html#ae7a61be26b2ab9f946858b269f783ceb">BinToInt</a> (self, msg)</td></tr>
+<tr class="memdesc:ae7a61be26b2ab9f946858b269f783ceb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Função <a class="el" href="classSDes_1_1SDES.html#ae7a61be26b2ab9f946858b269f783ceb" title="Função BinToInt() ">BinToInt()</a>  <a href="#ae7a61be26b2ab9f946858b269f783ceb">Mais...</a><br /></td></tr>
+<tr class="separator:ae7a61be26b2ab9f946858b269f783ceb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acf0dd4e866d6ec37d3cfd99e55ff0860"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSDes_1_1SDES.html#acf0dd4e866d6ec37d3cfd99e55ff0860">swap</a> (self, msg_bin)</td></tr>
+<tr class="memdesc:acf0dd4e866d6ec37d3cfd99e55ff0860"><td class="mdescLeft">&#160;</td><td class="mdescRight">Função <a class="el" href="classSDes_1_1SDES.html#acf0dd4e866d6ec37d3cfd99e55ff0860" title="Função swap() ">swap()</a>  <a href="#acf0dd4e866d6ec37d3cfd99e55ff0860">Mais...</a><br /></td></tr>
+<tr class="separator:acf0dd4e866d6ec37d3cfd99e55ff0860"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a623bc6192ecbd36b19a4e8d130b344d8"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSDes_1_1SDES.html#a623bc6192ecbd36b19a4e8d130b344d8">encrypt</a> (self, msg)</td></tr>
+<tr class="memdesc:a623bc6192ecbd36b19a4e8d130b344d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Função <a class="el" href="classSDes_1_1SDES.html#a623bc6192ecbd36b19a4e8d130b344d8" title="Função encrypt() ">encrypt()</a>  <a href="#a623bc6192ecbd36b19a4e8d130b344d8">Mais...</a><br /></td></tr>
+<tr class="separator:a623bc6192ecbd36b19a4e8d130b344d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af265d1bdae396b73d1d01b996e19db7b"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSDes_1_1SDES.html#af265d1bdae396b73d1d01b996e19db7b">decrypt</a> (self, msg)</td></tr>
+<tr class="memdesc:af265d1bdae396b73d1d01b996e19db7b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Função <a class="el" href="classSDes_1_1SDES.html#af265d1bdae396b73d1d01b996e19db7b" title="Função decrypt() ">decrypt()</a>  <a href="#af265d1bdae396b73d1d01b996e19db7b">Mais...</a><br /></td></tr>
+<tr class="separator:af265d1bdae396b73d1d01b996e19db7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb4053be82ea157dcb456d7a110ab7ba"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSDes_1_1SDES.html#adb4053be82ea157dcb456d7a110ab7ba">permutacao</a> (self, vetor_permuta, regua)</td></tr>
+<tr class="memdesc:adb4053be82ea157dcb456d7a110ab7ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Função <a class="el" href="classSDes_1_1SDES.html#adb4053be82ea157dcb456d7a110ab7ba" title="Função permutacao() ">permutacao()</a>  <a href="#adb4053be82ea157dcb456d7a110ab7ba">Mais...</a><br /></td></tr>
+<tr class="separator:adb4053be82ea157dcb456d7a110ab7ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa8a7694be3eeeac74143ac74ed2d05b4"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSDes_1_1SDES.html#aa8a7694be3eeeac74143ac74ed2d05b4">leftShift</a> (self, vector_bits, desloca)</td></tr>
+<tr class="memdesc:aa8a7694be3eeeac74143ac74ed2d05b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Função <a class="el" href="classSDes_1_1SDES.html#aa8a7694be3eeeac74143ac74ed2d05b4" title="Função leftShift() ">leftShift()</a>  <a href="#aa8a7694be3eeeac74143ac74ed2d05b4">Mais...</a><br /></td></tr>
+<tr class="separator:aa8a7694be3eeeac74143ac74ed2d05b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa7be2907b50b54829d577a6ae3dc6fbd"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSDes_1_1SDES.html#aa7be2907b50b54829d577a6ae3dc6fbd">keyK1</a> (self)</td></tr>
+<tr class="memdesc:aa7be2907b50b54829d577a6ae3dc6fbd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Função <a class="el" href="classSDes_1_1SDES.html#aa7be2907b50b54829d577a6ae3dc6fbd" title="Função keyK1() ">keyK1()</a>  <a href="#aa7be2907b50b54829d577a6ae3dc6fbd">Mais...</a><br /></td></tr>
+<tr class="separator:aa7be2907b50b54829d577a6ae3dc6fbd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9c4a1ad75a29ca69d52e30c5f74178ec"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSDes_1_1SDES.html#a9c4a1ad75a29ca69d52e30c5f74178ec">keyK2</a> (self)</td></tr>
+<tr class="memdesc:a9c4a1ad75a29ca69d52e30c5f74178ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Função <a class="el" href="classSDes_1_1SDES.html#a9c4a1ad75a29ca69d52e30c5f74178ec" title="Função keyK2() ">keyK2()</a>  <a href="#a9c4a1ad75a29ca69d52e30c5f74178ec">Mais...</a><br /></td></tr>
+<tr class="separator:a9c4a1ad75a29ca69d52e30c5f74178ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9685da5df89b41566b19ec42d671ff1a"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSDes_1_1SDES.html#a9685da5df89b41566b19ec42d671ff1a">functionK1</a> (self, msg)</td></tr>
+<tr class="memdesc:a9685da5df89b41566b19ec42d671ff1a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Função <a class="el" href="classSDes_1_1SDES.html#a9685da5df89b41566b19ec42d671ff1a" title="Função functionK1() ">functionK1()</a>  <a href="#a9685da5df89b41566b19ec42d671ff1a">Mais...</a><br /></td></tr>
+<tr class="separator:a9685da5df89b41566b19ec42d671ff1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af05ec8875b6e1d7a03aa084ca8d423f4"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSDes_1_1SDES.html#af05ec8875b6e1d7a03aa084ca8d423f4">functionK2</a> (self, msg)</td></tr>
+<tr class="memdesc:af05ec8875b6e1d7a03aa084ca8d423f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Função <a class="el" href="classSDes_1_1SDES.html#af05ec8875b6e1d7a03aa084ca8d423f4" title="Função functionK2() ">functionK2()</a>  <a href="#af05ec8875b6e1d7a03aa084ca8d423f4">Mais...</a><br /></td></tr>
+<tr class="separator:af05ec8875b6e1d7a03aa084ca8d423f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8999e99c710e063a664c815e0d8f3c47"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSDes_1_1SDES.html#a8999e99c710e063a664c815e0d8f3c47">box</a> (self, s1, s2, bi_left, bi_right)</td></tr>
+<tr class="memdesc:a8999e99c710e063a664c815e0d8f3c47"><td class="mdescLeft">&#160;</td><td class="mdescRight">Função <a class="el" href="classSDes_1_1SDES.html#a8999e99c710e063a664c815e0d8f3c47" title="Função box() ">box()</a>  <a href="#a8999e99c710e063a664c815e0d8f3c47">Mais...</a><br /></td></tr>
+<tr class="separator:a8999e99c710e063a664c815e0d8f3c47"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae67da64b88d21476429c8e892b0f8938"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSDes_1_1SDES.html#ae67da64b88d21476429c8e892b0f8938">recuperaMsg</a> (self, msg)</td></tr>
+<tr class="memdesc:ae67da64b88d21476429c8e892b0f8938"><td class="mdescLeft">&#160;</td><td class="mdescRight">Função <a class="el" href="classSDes_1_1SDES.html#ae67da64b88d21476429c8e892b0f8938" title="Função recuperaMsg() ">recuperaMsg()</a>  <a href="#ae67da64b88d21476429c8e892b0f8938">Mais...</a><br /></td></tr>
+<tr class="separator:ae67da64b88d21476429c8e892b0f8938"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Atributos Públicos</h2></td></tr>
+<tr class="memitem:aefb8260ca74c906754e92855c02aceb5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSDes_1_1SDES.html#aefb8260ca74c906754e92855c02aceb5">key</a></td></tr>
+<tr class="separator:aefb8260ca74c906754e92855c02aceb5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
+Atributos Estáticos Públicos</h2></td></tr>
+<tr class="memitem:acc74b9d292a16662330709e5de8b374e"><td class="memItemLeft" align="right" valign="top">tuple&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSDes_1_1SDES.html#acc74b9d292a16662330709e5de8b374e">REG_P10</a> = (3, 5, 2, 7, 4, 10, 1, 9, 8, 6)</td></tr>
+<tr class="separator:acc74b9d292a16662330709e5de8b374e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab1925dcde695fea373fb295880bd6ab7"><td class="memItemLeft" align="right" valign="top">tuple&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSDes_1_1SDES.html#ab1925dcde695fea373fb295880bd6ab7">REG_P8</a> = (6, 3, 7, 4, 8, 5, 10, 9)</td></tr>
+<tr class="separator:ab1925dcde695fea373fb295880bd6ab7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a254f82c224e63c4b251ef4dea4d3a5af"><td class="memItemLeft" align="right" valign="top">tuple&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSDes_1_1SDES.html#a254f82c224e63c4b251ef4dea4d3a5af">REG_EP</a> = (4, 1, 2, 3, 2, 3, 4, 1)</td></tr>
+<tr class="separator:a254f82c224e63c4b251ef4dea4d3a5af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a33f5a7f2e916d1bb06b9199a7f4f844a"><td class="memItemLeft" align="right" valign="top">tuple&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSDes_1_1SDES.html#a33f5a7f2e916d1bb06b9199a7f4f844a">REG_P4</a> = (2, 4, 3, 1)</td></tr>
+<tr class="separator:a33f5a7f2e916d1bb06b9199a7f4f844a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1b3ebeba8e3a428a9d49e4d6cc3af0f3"><td class="memItemLeft" align="right" valign="top">tuple&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSDes_1_1SDES.html#a1b3ebeba8e3a428a9d49e4d6cc3af0f3">BOX_S1</a> = ([1, 0, 3, 2], [3, 2, 1, 0], [0, 2, 1, 3], [3, 1, 3, 2])</td></tr>
+<tr class="separator:a1b3ebeba8e3a428a9d49e4d6cc3af0f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a766bb6378fd2ad66923039e3791a48f9"><td class="memItemLeft" align="right" valign="top">tuple&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSDes_1_1SDES.html#a766bb6378fd2ad66923039e3791a48f9">BOX_S2</a> = ([1, 1, 2, 3], [2, 0, 1, 3], [3, 0, 1, 0], [2, 1, 0, 3])</td></tr>
+<tr class="separator:a766bb6378fd2ad66923039e3791a48f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8f7b0a802b6688bc62444af10f73ec51"><td class="memItemLeft" align="right" valign="top">tuple&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSDes_1_1SDES.html#a8f7b0a802b6688bc62444af10f73ec51">LINHA</a> = (1, 4)</td></tr>
+<tr class="separator:a8f7b0a802b6688bc62444af10f73ec51"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6416e8fb8432fba506fa4f603021b41a"><td class="memItemLeft" align="right" valign="top">tuple&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSDes_1_1SDES.html#a6416e8fb8432fba506fa4f603021b41a">COLUNA</a> = (2, 3)</td></tr>
+<tr class="separator:a6416e8fb8432fba506fa4f603021b41a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Construtores &amp; Destrutores</h2>
+<a class="anchor" id="ab8276906cece541fb8913287f8ae5af1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def SDes.SDES.__init__ </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>PASS_SDES</em> = <code>'0010100000'</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Construtor <b>init</b>() da classe <a class="el" href="namespaceSDes.html">SDes</a>. </p>
+<p>inicializa o valor da chave, </p><dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">PASS_SDES</td><td>- chave usada na cifra e tem um valor default </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Métodos</h2>
+<a class="anchor" id="ae7a61be26b2ab9f946858b269f783ceb"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def SDes.SDES.BinToInt </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>msg</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Função <a class="el" href="classSDes_1_1SDES.html#ae7a61be26b2ab9f946858b269f783ceb" title="Função BinToInt() ">BinToInt()</a> </p>
+<p>Pega o valor do char e converte para binário </p><dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">msg</td><td>- caracter da mensagem a ser convertido </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>result - retorna uma lista de inteiro que representa o valor binário do caracter </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a8999e99c710e063a664c815e0d8f3c47"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def SDes.SDES.box </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>s1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>s2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>bi_left</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>bi_right</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Função <a class="el" href="classSDes_1_1SDES.html#a8999e99c710e063a664c815e0d8f3c47" title="Função box() ">box()</a> </p>
+<p>Mais uma etapa de manipulação dos bits da mensagem </p><dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">s1</td><td>- primeiros 4 bits após passar pelas funções complexas </td></tr>
+    <tr><td class="paramname">s2</td><td>- últimos 4 bits após passar pelas funções complexas </td></tr>
+    <tr><td class="paramname">bi_left</td><td>- parte esquerda da mensagem </td></tr>
+    <tr><td class="paramname">bi_right</td><td>- parte direita da mensagem </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><div class="dynheader">
+Este é o diagrama das funções utilizadas por esta função:</div>
+<div class="dyncontent">
+<div class="center"><img src="classSDes_1_1SDES_a8999e99c710e063a664c815e0d8f3c47_cgraph.png" border="0" usemap="#classSDes_1_1SDES_a8999e99c710e063a664c815e0d8f3c47_cgraph" alt=""/></div>
+<map name="classSDes_1_1SDES_a8999e99c710e063a664c815e0d8f3c47_cgraph" id="classSDes_1_1SDES_a8999e99c710e063a664c815e0d8f3c47_cgraph">
+<area shape="rect" id="node2" href="classSDes_1_1SDES.html#adb4053be82ea157dcb456d7a110ab7ba" title="Função permutacao() " alt="" coords="175,5,343,32"/>
+</map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="af265d1bdae396b73d1d01b996e19db7b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def SDes.SDES.decrypt </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>msg</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Função <a class="el" href="classSDes_1_1SDES.html#af265d1bdae396b73d1d01b996e19db7b" title="Função decrypt() ">decrypt()</a> </p>
+<p>Decripta a mensagem que foi recebida </p><dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">msg</td><td>- É a mensagem que será decriptada </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>resutl - Retorna a mensagem decriptada </dd></dl>
+
+<p><div class="dynheader">
+Este é o diagrama das funções utilizadas por esta função:</div>
+<div class="dyncontent">
+<div class="center"><img src="classSDes_1_1SDES_af265d1bdae396b73d1d01b996e19db7b_cgraph.png" border="0" usemap="#classSDes_1_1SDES_af265d1bdae396b73d1d01b996e19db7b_cgraph" alt=""/></div>
+<map name="classSDes_1_1SDES_af265d1bdae396b73d1d01b996e19db7b_cgraph" id="classSDes_1_1SDES_af265d1bdae396b73d1d01b996e19db7b_cgraph">
+<area shape="rect" id="node2" href="classSDes_1_1SDES.html#ae67da64b88d21476429c8e892b0f8938" title="Função recuperaMsg() " alt="" coords="196,5,371,32"/>
+<area shape="rect" id="node3" href="classSDes_1_1SDES.html#ae7a61be26b2ab9f946858b269f783ceb" title="Função BinToInt() " alt="" coords="209,56,358,83"/>
+<area shape="rect" id="node4" href="classSDes_1_1SDES.html#af05ec8875b6e1d7a03aa084ca8d423f4" title="Função functionK2() " alt="" coords="202,157,365,184"/>
+<area shape="rect" id="node9" href="classSDes_1_1SDES.html#a8999e99c710e063a664c815e0d8f3c47" title="Função box() " alt="" coords="637,107,759,133"/>
+<area shape="rect" id="node10" href="classSDes_1_1SDES.html#acf0dd4e866d6ec37d3cfd99e55ff0860" title="Função swap() " alt="" coords="218,259,349,285"/>
+<area shape="rect" id="node11" href="classSDes_1_1SDES.html#a9685da5df89b41566b19ec42d671ff1a" title="Função functionK1() " alt="" coords="419,208,581,235"/>
+<area shape="rect" id="node5" href="classSDes_1_1SDES.html#adb4053be82ea157dcb456d7a110ab7ba" title="Função permutacao() " alt="" coords="815,208,983,235"/>
+<area shape="rect" id="node6" href="classSDes_1_1SDES.html#a9c4a1ad75a29ca69d52e30c5f74178ec" title="Função keyK2() " alt="" coords="431,284,569,311"/>
+<area shape="rect" id="node7" href="classSDes_1_1SDES.html#aa7be2907b50b54829d577a6ae3dc6fbd" title="Função keyK1() " alt="" coords="629,259,767,285"/>
+<area shape="rect" id="node8" href="classSDes_1_1SDES.html#aa8a7694be3eeeac74143ac74ed2d05b4" title="Função leftShift() " alt="" coords="826,309,971,336"/>
+</map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a623bc6192ecbd36b19a4e8d130b344d8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def SDes.SDES.encrypt </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>msg</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Função <a class="el" href="classSDes_1_1SDES.html#a623bc6192ecbd36b19a4e8d130b344d8" title="Função encrypt() ">encrypt()</a> </p>
+<p>Encripta a mensagem que será enviada </p><dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">msg</td><td>- É a mensagem que será encriptada </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>resutl - Retorna a mensagem encriptada </dd></dl>
+
+<p><div class="dynheader">
+Este é o diagrama das funções utilizadas por esta função:</div>
+<div class="dyncontent">
+<div class="center"><img src="classSDes_1_1SDES_a623bc6192ecbd36b19a4e8d130b344d8_cgraph.png" border="0" usemap="#classSDes_1_1SDES_a623bc6192ecbd36b19a4e8d130b344d8_cgraph" alt=""/></div>
+<map name="classSDes_1_1SDES_a623bc6192ecbd36b19a4e8d130b344d8_cgraph" id="classSDes_1_1SDES_a623bc6192ecbd36b19a4e8d130b344d8_cgraph">
+<area shape="rect" id="node2" href="classSDes_1_1SDES.html#ae7a61be26b2ab9f946858b269f783ceb" title="Função BinToInt() " alt="" coords="203,5,352,32"/>
+<area shape="rect" id="node3" href="classSDes_1_1SDES.html#a9685da5df89b41566b19ec42d671ff1a" title="Função functionK1() " alt="" coords="407,157,569,184"/>
+<area shape="rect" id="node7" href="classSDes_1_1SDES.html#a8999e99c710e063a664c815e0d8f3c47" title="Função box() " alt="" coords="625,56,747,83"/>
+<area shape="rect" id="node8" href="classSDes_1_1SDES.html#acf0dd4e866d6ec37d3cfd99e55ff0860" title="Função swap() " alt="" coords="212,208,343,235"/>
+<area shape="rect" id="node9" href="classSDes_1_1SDES.html#af05ec8875b6e1d7a03aa084ca8d423f4" title="Função functionK2() " alt="" coords="196,157,359,184"/>
+<area shape="rect" id="node4" href="classSDes_1_1SDES.html#adb4053be82ea157dcb456d7a110ab7ba" title="Função permutacao() " alt="" coords="803,157,971,184"/>
+<area shape="rect" id="node5" href="classSDes_1_1SDES.html#aa7be2907b50b54829d577a6ae3dc6fbd" title="Função keyK1() " alt="" coords="617,259,755,285"/>
+<area shape="rect" id="node6" href="classSDes_1_1SDES.html#aa8a7694be3eeeac74143ac74ed2d05b4" title="Função leftShift() " alt="" coords="814,284,959,311"/>
+<area shape="rect" id="node10" href="classSDes_1_1SDES.html#a9c4a1ad75a29ca69d52e30c5f74178ec" title="Função keyK2() " alt="" coords="419,233,557,260"/>
+</map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a9685da5df89b41566b19ec42d671ff1a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def SDes.SDES.functionK1 </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>msg</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Função <a class="el" href="classSDes_1_1SDES.html#a9685da5df89b41566b19ec42d671ff1a" title="Função functionK1() ">functionK1()</a> </p>
+<p>Função complexa 1, faz as operações para a encriptação da mensagem </p><dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">msg</td><td>- Mensagem que passará pela função complexa </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>s1, s2, bi_left, bi_right - s1 são os primeros 4 bits do primeiro xor, s2 são os 4 últimos </dd></dl>
+
+<p><div class="dynheader">
+Este é o diagrama das funções utilizadas por esta função:</div>
+<div class="dyncontent">
+<div class="center"><img src="classSDes_1_1SDES_a9685da5df89b41566b19ec42d671ff1a_cgraph.png" border="0" usemap="#classSDes_1_1SDES_a9685da5df89b41566b19ec42d671ff1a_cgraph" alt=""/></div>
+<map name="classSDes_1_1SDES_a9685da5df89b41566b19ec42d671ff1a_cgraph" id="classSDes_1_1SDES_a9685da5df89b41566b19ec42d671ff1a_cgraph">
+<area shape="rect" id="node2" href="classSDes_1_1SDES.html#adb4053be82ea157dcb456d7a110ab7ba" title="Função permutacao() " alt="" coords="401,5,569,32"/>
+<area shape="rect" id="node3" href="classSDes_1_1SDES.html#aa7be2907b50b54829d577a6ae3dc6fbd" title="Função keyK1() " alt="" coords="216,56,353,83"/>
+<area shape="rect" id="node4" href="classSDes_1_1SDES.html#aa8a7694be3eeeac74143ac74ed2d05b4" title="Função leftShift() " alt="" coords="413,56,558,83"/>
+</map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="af05ec8875b6e1d7a03aa084ca8d423f4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def SDes.SDES.functionK2 </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>msg</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Função <a class="el" href="classSDes_1_1SDES.html#af05ec8875b6e1d7a03aa084ca8d423f4" title="Função functionK2() ">functionK2()</a> </p>
+<p>Função complexa 2, faz as operações para a encriptação da mensagem </p><dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">msg</td><td>- Mensagem que passará pela função complexa </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>s1, s2, bi_left, bi_right - s1 são os primeros 4 bits do segundo xor, s2 são os 4 últimos </dd></dl>
+
+<p><div class="dynheader">
+Este é o diagrama das funções utilizadas por esta função:</div>
+<div class="dyncontent">
+<div class="center"><img src="classSDes_1_1SDES_af05ec8875b6e1d7a03aa084ca8d423f4_cgraph.png" border="0" usemap="#classSDes_1_1SDES_af05ec8875b6e1d7a03aa084ca8d423f4_cgraph" alt=""/></div>
+<map name="classSDes_1_1SDES_af05ec8875b6e1d7a03aa084ca8d423f4_cgraph" id="classSDes_1_1SDES_af05ec8875b6e1d7a03aa084ca8d423f4_cgraph">
+<area shape="rect" id="node2" href="classSDes_1_1SDES.html#adb4053be82ea157dcb456d7a110ab7ba" title="Função permutacao() " alt="" coords="587,31,755,57"/>
+<area shape="rect" id="node3" href="classSDes_1_1SDES.html#a9c4a1ad75a29ca69d52e30c5f74178ec" title="Função keyK2() " alt="" coords="216,56,353,83"/>
+<area shape="rect" id="node4" href="classSDes_1_1SDES.html#aa7be2907b50b54829d577a6ae3dc6fbd" title="Função keyK1() " alt="" coords="401,81,539,108"/>
+<area shape="rect" id="node5" href="classSDes_1_1SDES.html#aa8a7694be3eeeac74143ac74ed2d05b4" title="Função leftShift() " alt="" coords="598,107,743,133"/>
+</map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="aa7be2907b50b54829d577a6ae3dc6fbd"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def SDes.SDES.keyK1 </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Função <a class="el" href="classSDes_1_1SDES.html#aa7be2907b50b54829d577a6ae3dc6fbd" title="Função keyK1() ">keyK1()</a> </p>
+<p>Função responsável por gerar a chave k1 </p><dl class="section return"><dt>Retorna</dt><dd>(k1, aux) - retorna a chave k1 aux recebe o vetor concatenado depois do leftshift </dd></dl>
+
+<p><div class="dynheader">
+Este é o diagrama das funções utilizadas por esta função:</div>
+<div class="dyncontent">
+<div class="center"><img src="classSDes_1_1SDES_aa7be2907b50b54829d577a6ae3dc6fbd_cgraph.png" border="0" usemap="#classSDes_1_1SDES_aa7be2907b50b54829d577a6ae3dc6fbd_cgraph" alt=""/></div>
+<map name="classSDes_1_1SDES_aa7be2907b50b54829d577a6ae3dc6fbd_cgraph" id="classSDes_1_1SDES_aa7be2907b50b54829d577a6ae3dc6fbd_cgraph">
+<area shape="rect" id="node2" href="classSDes_1_1SDES.html#adb4053be82ea157dcb456d7a110ab7ba" title="Função permutacao() " alt="" coords="191,5,359,32"/>
+<area shape="rect" id="node3" href="classSDes_1_1SDES.html#aa8a7694be3eeeac74143ac74ed2d05b4" title="Função leftShift() " alt="" coords="202,56,347,83"/>
+</map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a9c4a1ad75a29ca69d52e30c5f74178ec"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def SDes.SDES.keyK2 </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Função <a class="el" href="classSDes_1_1SDES.html#a9c4a1ad75a29ca69d52e30c5f74178ec" title="Função keyK2() ">keyK2()</a> </p>
+<p>Função responsável por gerar a chave k2 </p><dl class="section return"><dt>Retorna</dt><dd>(k1, aux) - retorna a chave k2 </dd></dl>
+
+<p><div class="dynheader">
+Este é o diagrama das funções utilizadas por esta função:</div>
+<div class="dyncontent">
+<div class="center"><img src="classSDes_1_1SDES_a9c4a1ad75a29ca69d52e30c5f74178ec_cgraph.png" border="0" usemap="#classSDes_1_1SDES_a9c4a1ad75a29ca69d52e30c5f74178ec_cgraph" alt=""/></div>
+<map name="classSDes_1_1SDES_a9c4a1ad75a29ca69d52e30c5f74178ec_cgraph" id="classSDes_1_1SDES_a9c4a1ad75a29ca69d52e30c5f74178ec_cgraph">
+<area shape="rect" id="node2" href="classSDes_1_1SDES.html#aa7be2907b50b54829d577a6ae3dc6fbd" title="Função keyK1() " alt="" coords="191,31,328,57"/>
+<area shape="rect" id="node3" href="classSDes_1_1SDES.html#adb4053be82ea157dcb456d7a110ab7ba" title="Função permutacao() " alt="" coords="376,5,544,32"/>
+<area shape="rect" id="node4" href="classSDes_1_1SDES.html#aa8a7694be3eeeac74143ac74ed2d05b4" title="Função leftShift() " alt="" coords="387,68,533,95"/>
+</map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="aa8a7694be3eeeac74143ac74ed2d05b4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def SDes.SDES.leftShift </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>vector_bits</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>desloca</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Função <a class="el" href="classSDes_1_1SDES.html#aa8a7694be3eeeac74143ac74ed2d05b4" title="Função leftShift() ">leftShift()</a> </p>
+<p>Faz o deslocamento na cadeia de bits </p><dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">vector_bits</td><td>- Vetor de bits que será deslocado </td></tr>
+    <tr><td class="paramname">desloca</td><td>- Diz de quanto será a deslocação do vetor </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>list_ - Retorna uma lista com o vetor deslocado </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="adb4053be82ea157dcb456d7a110ab7ba"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def SDes.SDES.permutacao </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>vetor_permuta</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>regua</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Função <a class="el" href="classSDes_1_1SDES.html#adb4053be82ea157dcb456d7a110ab7ba" title="Função permutacao() ">permutacao()</a> </p>
+<p>Faz as permutações das mensagens a partir das réguas </p><dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">vetor_permuta</td><td>- Vetor que será permutado </td></tr>
+    <tr><td class="paramname">regua</td><td>- Régua que controla a permuta </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>resutl - retorna uma lista contendo a permuta do binário </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ae67da64b88d21476429c8e892b0f8938"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def SDes.SDES.recuperaMsg </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>msg</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Função <a class="el" href="classSDes_1_1SDES.html#ae67da64b88d21476429c8e892b0f8938" title="Função recuperaMsg() ">recuperaMsg()</a> </p>
+<p>Recupera a mensagem que antes estava em bits para char </p><dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">msg</td><td>- Mensagem que está em bits </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>message - Mensagem no formato char </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="acf0dd4e866d6ec37d3cfd99e55ff0860"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def SDes.SDES.swap </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>msg_bin</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Função <a class="el" href="classSDes_1_1SDES.html#acf0dd4e866d6ec37d3cfd99e55ff0860" title="Função swap() ">swap()</a> </p>
+<p>Troca os 4 últimos bits de cada caracter pelos 4 primeiros </p><dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">msg_bin</td><td>- binário para ser trocado </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>(right + left) - cadeia de binário com a troca feita </dd></dl>
+
+</div>
+</div>
+<h2 class="groupheader">Atributos</h2>
+<a class="anchor" id="a1b3ebeba8e3a428a9d49e4d6cc3af0f3"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">tuple SDes.SDES.BOX_S1 = ([1, 0, 3, 2], [3, 2, 1, 0], [0, 2, 1, 3], [3, 1, 3, 2])</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a766bb6378fd2ad66923039e3791a48f9"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">tuple SDes.SDES.BOX_S2 = ([1, 1, 2, 3], [2, 0, 1, 3], [3, 0, 1, 0], [2, 1, 0, 3])</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a6416e8fb8432fba506fa4f603021b41a"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">tuple SDes.SDES.COLUNA = (2, 3)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aefb8260ca74c906754e92855c02aceb5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">SDes.SDES.key</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a8f7b0a802b6688bc62444af10f73ec51"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">tuple SDes.SDES.LINHA = (1, 4)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a254f82c224e63c4b251ef4dea4d3a5af"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">tuple SDes.SDES.REG_EP = (4, 1, 2, 3, 2, 3, 4, 1)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="acc74b9d292a16662330709e5de8b374e"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">tuple SDes.SDES.REG_P10 = (3, 5, 2, 7, 4, 10, 1, 9, 8, 6)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a33f5a7f2e916d1bb06b9199a7f4f844a"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">tuple SDes.SDES.REG_P4 = (2, 4, 3, 1)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ab1925dcde695fea373fb295880bd6ab7"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">tuple SDes.SDES.REG_P8 = (6, 3, 7, 4, 8, 5, 10, 9)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>A documentação para esta classe foi gerada a partir do seguinte arquivo:<ul>
+<li><a class="el" href="SDes_8py.html">SDes.py</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Gerado por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.11
+</small></address>
+</body>
+</html>

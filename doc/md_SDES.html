@@ -1,0 +1,139 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.11"/>
+<title>Projeto Chat via TCP/IP: SDES</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="logo-ufrn-imd.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Projeto Chat via TCP/IP
+   </div>
+   <div id="projectbrief">Comunicação cifrada (SDes ou RC4) | Clients-Server</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.8.11 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Busca');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Página&#160;Principal</span></a></li>
+      <li class="current"><a href="pages.html"><span>Páginas&#160;relacionadas</span></a></li>
+      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
+      <li><a href="annotated.html"><span>Classes</span></a></li>
+      <li><a href="files.html"><span>Arquivos</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Busca" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title"><a class="el" href="namespaceSDES.html">SDES</a> </div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><p><em>Classe para criptografia de mensagens usando <a class="el" href="namespaceSDES.html">SDES</a></em></p>
+<h2>Classe <a class="el" href="namespaceSDES.html">SDES</a> </h2>
+<p>Visão geral</p><ul>
+<li>A classe <a class="el" href="namespaceSDES.html">SDES</a> recebe uma mensagem que será criptografada e posteriomente enviada pelo <a class="el" href="namespaceclient__chat.html">client_chat</a>.</li>
+<li>A classe <a class="el" href="namespaceSDES.html">SDES</a> também serve para decriptar as mensagem que compartilhem a mesma chave.</li>
+</ul>
+<h2>Métodos </h2>
+<p><b>Construtor <b>init</b>()</b></p><ul>
+<li>Inicializa a variável PASS_SDES (chave usada na criptografia e decriptografia).</li>
+</ul>
+<p><b>BinToInt()</b></p><ul>
+<li>Pega o valor do char e converte para inteiro.</li>
+</ul>
+<p><b>swap()</b></p><ul>
+<li>Troca os 4 últimos bits de cada caracter pelos 4 primeiros.</li>
+</ul>
+<p><b>permutacao()</b></p><ul>
+<li>Faz as permutações das mensagens a partir das réguas.</li>
+</ul>
+<p><b>recuperaMsg()</b></p><ul>
+<li>Recupera a mensagem que antes estava em bits para char.</li>
+</ul>
+<p><b>leftShift()</b></p><ul>
+<li>Faz o deslocamento na cadeia de bits.</li>
+</ul>
+<p><b>keyK1()</b></p><ul>
+<li>Função responsável por gerar a chave k1.</li>
+</ul>
+<p><b>keyK2()</b></p><ul>
+<li>Função responsável por gerar a chave k2.</li>
+</ul>
+<p><b>functionK1()</b></p><ul>
+<li>Função complexa 1, faz as operações para a encriptação da mensagem.</li>
+</ul>
+<p><b>functionK2()</b></p><ul>
+<li>Função complexa 2, faz as operações para a encriptação da mensagem.</li>
+</ul>
+<p><b>box()</b></p><ul>
+<li>Mais uma etapa de manipulação dos bits da mensagem.</li>
+</ul>
+<p><b>encrypt()</b></p><ul>
+<li>Encripta a mensagem que será enviada.</li>
+</ul>
+<p><b>ecrypt()</b></p><ul>
+<li>Decripta a mensagem que foi recebida. </li>
+</ul>
+</div></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Gerado por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.11
+</small></address>
+</body>
+</html>

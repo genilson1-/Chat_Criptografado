@@ -1,0 +1,128 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.11"/>
+<title>Projeto Chat via TCP/IP: Cliente Chat</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="logo-ufrn-imd.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Projeto Chat via TCP/IP
+   </div>
+   <div id="projectbrief">Comunicação cifrada (SDes ou RC4) | Clients-Server</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.8.11 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Busca');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Página&#160;Principal</span></a></li>
+      <li class="current"><a href="pages.html"><span>Páginas&#160;relacionadas</span></a></li>
+      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
+      <li><a href="annotated.html"><span>Classes</span></a></li>
+      <li><a href="files.html"><span>Arquivos</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Busca" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">Cliente Chat </div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><p><em>Cliente de Chat via TCP/IP</em></p>
+<h2>Cliente TCP/IP </h2>
+<p>Conecta com o host para enviar e receber mensagens.</p>
+<h2>Visão geral </h2>
+<ul>
+<li>O script <b><a class="el" href="client__chat_8py.html" title="Cliente de Chat via TCP/IP. ">client_chat.py</a></b> recebe como argumentos um <b>IP ou hostname</b> e uma <b>porta</b> do host/servidor via linha de comando para criar e conectar um <b>socket</b> ao host.</li>
+<li>As mensagens enviadas e recebidas são criptografadas utilizando a classe <b><a class="el" href="namespaceSDES.html">SDES</a></b> ou <b><a class="el" href="namespaceRC4.html">RC4</a></b>.</li>
+<li>Para troca de chaves é utilizado a classe <b><a class="el" href="namespaceDiffieHellman.html">DiffieHellman</a></b>.</li>
+</ul>
+<h2>Funções </h2>
+<p><b><a class="el" href="namespaceclient__chat.html#afce64870bf439de1dfdc2fd02e9a754b" title="Função para limpar console. ">clearConsole()</a></b></p><ul>
+<li>Função para limpar console.</li>
+</ul>
+<p><b><a class="el" href="namespaceclient__chat.html#a362f501ef6225f6640f950ef5b0c4791" title="Função formatPass() ">formatPass()</a></b></p><ul>
+<li>Função pra formatar a chave digitada pelo usuário.</li>
+</ul>
+<p><b><a class="el" href="namespaceclient__chat.html#a7fef4ebaae7fab5baf1b694ac8d0e135" title="Função notifyDH() ">notifyDH()</a></b></p><ul>
+<li>Função para notificar aos outros clientes sobre a mudança de chave (envia chave pública).</li>
+</ul>
+<p><b><a class="el" href="namespaceclient__chat.html#ad0c7adcb69562c951ac6ef8912606e3e" title="Função alterMyKeyPair() ">alterMyKeyPair()</a></b></p><ul>
+<li>Função para alterar o par de chaves (privado, público) do cliente.</li>
+</ul>
+<p><b><a class="el" href="namespaceclient__chat.html#a4370c2a04088a61fb9918d0cabca8c3f" title="Função alterPass() ">alterPass()</a></b></p><ul>
+<li>Função para alterar a senha/chave secreta da sessão.</li>
+</ul>
+<p><b><a class="el" href="namespaceclient__chat.html#a30205a51d0f399534d4bd00b99a9bf30" title="Função alterCript() ">alterCript()</a></b></p><ul>
+<li>Função para alterar criptossistema utilizado na troca de mensagens (<a class="el" href="namespaceSDES.html">SDES</a> ou <a class="el" href="namespaceRC4.html">RC4</a>).</li>
+</ul>
+<p><b><a class="el" href="namespaceclient__chat.html#a1e73747e16f64bbe2d45372bc3fe38cd" title="Função readInputSend() ">readInputSend()</a></b></p><ul>
+<li>Função para ler mensagem do usuário e enviar via socket ao host TCP/IP.</li>
+</ul>
+<p><b><a class="el" href="namespaceclient__chat.html#ae4872c867f8ea6a40ce07593556390e4" title="Função para tratamento multi-thread. ">handlerThread()</a></b></p><ul>
+<li>Função para tratamento multi-thread.</li>
+<li>Usada para chamar outras funções para serem executadas via Thread. </li>
+</ul>
+</div></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Gerado por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.11
+</small></address>
+</body>
+</html>
