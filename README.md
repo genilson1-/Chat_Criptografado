@@ -1,10 +1,6 @@
 README
 --
 
-@brief _Informações gerais sobre o projeto_
-
-**Projeto 1** da disciplina **IMD0703 Segurança de Redes**, ministrada pelo Prof. Silvio Sampaio no curso BTI da UFRN.
-
 
 Programa
 --
